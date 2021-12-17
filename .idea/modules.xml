@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/openFeign-demo/client/client.iml" filepath="$PROJECT_DIR$/openFeign-demo/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn-note.iml" filepath="$PROJECT_DIR$/.idea/learn-note.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openFeign-demo/openFeign-demo.iml" filepath="$PROJECT_DIR$/openFeign-demo/openFeign-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openFeign-demo/service/service.iml" filepath="$PROJECT_DIR$/openFeign-demo/service/service.iml" />
     </modules>
   </component>
 </project>
