@@ -1,0 +1,34 @@
+生成 redis   windows服务
+
+redis-server --service-install config/redis-6379.conf --service-name redis6379
+
+redis-server --service-install config/redis-6380.conf --service-name redis6380
+
+redis-server --service-install config/redis-6381.conf --service-name redis6381
+
+redis-server --service-install config/redis-6382.conf --service-name redis6382
+
+redis-server --service-install config/redis-6383.conf --service-name redis6383
+
+redis-server --service-install config/redis-6384.conf --service-name redis6384
+
+
+卸载windows服务
+
+redis-server --service-uninstall --service-name  redis6379
+
+redis-server --service-uninstall --service-name  redis6380
+
+redis-server --service-uninstall --service-name  redis6381
+
+redis-server --service-uninstall --service-name  redis6382
+
+redis-server --service-uninstall --service-name  redis6383
+
+redis-server --service-uninstall --service-name  redis6384
+
+
+--查看windows服务查看是否启动成功
+
+1.win+R
+2.services.msc

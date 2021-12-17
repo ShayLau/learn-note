@@ -1,0 +1,124 @@
+version: '3.7'
+
+services:
+  nacos:
+    image: nacos/nacos-server
+    container_name: nacos
+    environment:
+      - PREFER_HOST_MODE=127.0.0.1
+      - MODE=standalone
+    volumes:
+      - /users/mrxu/mydata/nacos/standalone-logs/:/home/nacos/logs
+      - /users/mrxu/mydata/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+      - "8848:8848"
+    depends_on:
+      - mysql
+  mysql:
+    container_name: mysql
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - /users/mrxu/mydata/mysql/data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    environment:
+      - PREFER_HOST_MODE=10.10.20.171
+      - MYSQL_ROOT_PASSWORD=admin123
+      - MYSQL_USER=nacos
+      - MYSQL_PASSWORD=nacos
+      - MYSQL_DATABASE=nacos
+      - TZ=Asia/Shanghai
+
+  redis7001:
+    image: 'redis'
+    container_name: redis7001
+    command:
+      [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    volumes:
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7001/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7001/data:/data
+    ports:
+      - "7001:7001"
+      - "17001:17001"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  redis7002:
+    image: 'redis'
+    container_name: redis7002
+    command:
+      [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    volumes:
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7002/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7002/data:/data
+    ports:
+      - "7002:7002"
+      - "17002:17002"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+
+
+  redis7003:
+    image: 'redis'
+    container_name: redis7003
+    command:
+      [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    volumes:
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7003/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7003/data:/data
+    ports:
+      - "7003:7003"
+      - "17003:17003"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+
+
+  redis7004:
+    image: 'redis'
+    container_name: redis7004
+    command:
+      [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    volumes:
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7004/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7004/data:/data
+    ports:
+      - "7004:7004"
+      - "17004:17004"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+
+
+  redis7005:
+    image: 'redis'
+    container_name: redis7005
+    command:
+      [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    volumes:
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7005/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7005/data:/data
+    ports:
+      - "7005:7005"
+      - "17005:17005"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+
+
+  redis7006:
+    image: 'redis'
+    container_name: redis7006
+    command:
+      [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+    volumes:
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7006/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /users/mrxu/mydata/redis/conf/redis-cluster/7006/data:/data
+    ports:
+      - "7006:7006"
+      - "17006:17006"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
