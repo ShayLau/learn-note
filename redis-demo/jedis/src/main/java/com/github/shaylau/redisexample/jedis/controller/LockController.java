@@ -13,7 +13,7 @@ import java.util.UUID;
 /**
  * Lock
  *
- * @author ShayLau
+ * 
  */
 @RestController
 @RequestMapping("/lock")

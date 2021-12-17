@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * <p>Description: </p>
  * <p>@author：http://www.github.com/shaylau</p>
  *
- * @author ShayLau
+ * 
  * @since  2021/4/12
  */
 @SpringBootApplication

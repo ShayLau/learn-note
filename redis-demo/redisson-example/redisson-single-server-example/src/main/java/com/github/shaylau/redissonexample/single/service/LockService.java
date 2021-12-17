@@ -1,7 +1,7 @@
 package com.github.shaylau.redissonexample.single.service;
 
 /**
- * @author ShayLau
+ * 
  * @date 2020/9/7 3:35 下午
  */
 public interface LockService {

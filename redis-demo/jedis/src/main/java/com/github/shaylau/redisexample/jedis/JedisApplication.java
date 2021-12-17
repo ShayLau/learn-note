@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Jedis 集成redis
  *
- * @author ShayLau
+ * 
  */
 @SpringBootApplication
 public class JedisApplication {

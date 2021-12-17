@@ -1,7 +1,7 @@
 package com.github.shaylau.redisexample.jedis.service;
 
 /**
- * @author ShayLau
+ * 
  * @date 2020/9/8 2:51 下午
  */
 public interface PublishService {

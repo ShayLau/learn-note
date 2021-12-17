@@ -1,0 +1,6 @@
+Compiled from "Demo.java"
+public class com.demo.test.Demo {
+  public com.demo.test.Demo();
+  public void a();
+  public void b();
+}

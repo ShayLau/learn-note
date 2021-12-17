@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * ElasticSearch Application
  *
- * @author ShayLau
+ * 
  */
 @SpringBootApplication
 public class ElasticSearchDemoApplication {

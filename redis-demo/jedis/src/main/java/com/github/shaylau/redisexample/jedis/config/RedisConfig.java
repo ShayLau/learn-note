@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 /**
  * Jedis 配置
  *
- * @author ShayLau
+ * 
  */
 @Configuration
 public class RedisConfig {

@@ -6,7 +6,7 @@ import redis.clients.jedis.JedisPubSub;
 /**
  * 简单消息订阅
  *
- * @author ShayLau
+ * 
  * @date 2020/9/8 1:46 下午
  */
 @Slf4j

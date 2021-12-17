@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Mybatis Plus 配置
  *
- * @author ShayLau
+ * 
  */
 @Configuration
 @MapperScan(value = "com.elasticsearch.demo.mapper")

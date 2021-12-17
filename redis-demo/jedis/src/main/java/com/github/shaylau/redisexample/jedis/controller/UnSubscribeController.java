@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author ShayLau
+ * 
  * @date 2020/9/8 1:42 下午
  */
 @RequestMapping("/unsubscribe")

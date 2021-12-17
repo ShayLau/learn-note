@@ -17,7 +17,7 @@ import java.util.Objects;
  * ElasticSearch 节点配置
  * ES rest client配置
  *
- * @author ShayLau
+ * 
  */
 @Configuration
 public class ElasticSearchConfig {
